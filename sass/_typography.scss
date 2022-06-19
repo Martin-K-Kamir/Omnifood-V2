@@ -1,0 +1,89 @@
+
+.title-primary,
+.title-secondary {
+	font-weight    : 700;
+	letter-spacing : -0.5px;
+	color          : #333333;
+}
+
+.title-primary {
+	font-size   : 5rem;
+	line-height : 1.05;
+
+	@media (max-width : 84em) {
+		font-size : 4rem
+	}
+}
+
+.title-secondary {
+	margin-bottom : 9.6rem;
+	font-size     : 4.2rem;
+	line-height   : 1.2;
+
+	@media (max-width : 75em) {
+		font-size : 3.6rem;
+	}
+
+	@media (max-width : 44em) {
+		margin-bottom : 4.8rem;
+	}
+
+	&--small {
+		margin-bottom  : 2.4rem;
+		font-size      : 1.4rem;
+		font-weight    : 500;
+		letter-spacing : 0.75px;
+		text-transform : uppercase;
+		color          : #999999;
+	}
+
+	.section--testimonials & {
+		margin-bottom : 0;
+	}
+}
+
+.title-tertiary {
+	margin-bottom : 3.2rem;
+	font-size     : 3rem;
+	line-height   : 1.2;
+
+	@media (max-width : 75em) {
+		font-size : 2.4rem
+	}
+}
+
+.subtitle {
+	margin-bottom  : 1rem;
+	font-size      : 1.6rem;
+	font-weight    : 500;
+	letter-spacing : -0.5px;
+	text-transform : uppercase;
+	color          : #cf711f;
+	display        : block;
+}
+
+.link {
+	&,
+	&:link,
+	&:visited {
+		padding-bottom  : 2px;
+		font-size       : 1.8rem;
+		text-decoration : none;
+		color           : #e67e22;
+		border-bottom   : 1px solid;
+		transition      : border-color 250ms, color 250ms;
+		display         : inline-block;
+	}
+
+	&:hover,
+	&:active,
+	&:focus-visible {
+		color        : #cf711f;
+		border-color : transparent;
+	}
+}
+
+.info-description {
+	font-size  : 1.4rem;
+	text-align : center;
+}

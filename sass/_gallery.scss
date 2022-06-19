@@ -1,0 +1,24 @@
+
+.gallery {
+	display               : grid;
+	align-content         : start;
+	grid-template-columns : repeat(auto-fit, minmax(16.5rem, 1fr));
+	gap                   : 1.6rem;
+
+	@media (max-width : 675px) {
+		grid-template-columns : repeat(auto-fit, minmax(13rem, 1fr));
+	}
+
+	&__item {
+		overflow : hidden;
+
+	}
+
+	&__photo {
+		transition : transform 300ms;
+
+		&:hover {
+			transform : scale(1.08);
+		}
+	}
+}

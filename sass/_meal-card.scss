@@ -1,0 +1,92 @@
+
+.meal-card {
+
+	overflow      : hidden;
+	box-shadow    : 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	border-radius : 11px;
+	transition    : transform 250ms, box-shadow 250ms;
+
+	&:hover {
+		box-shadow : 0 3.2rem 6.4rem rgba(0, 0, 0, 0.055);
+		transform  : translateY(-1.2rem);
+
+	}
+
+	&__content {
+		padding : 3.6rem;
+
+		@media (max-width : 59em) {
+			padding : 2rem;
+		}
+	}
+
+	&__recipe-name {
+		margin-bottom : 2.4rem;
+		font-size     : 2.4rem;
+		font-weight   : 600;
+		color         : #444444;
+
+		@media (max-width : 59em) {
+			font-size : 2rem;
+		}
+	}
+
+	&__tags {
+		margin-bottom : 1rem;
+		display       : flex;
+		gap           : 1rem;
+	}
+
+	&__tag {
+		padding        : 0.4rem 0.8rem;
+		font-size      : 1.1rem;
+		font-weight    : 600;
+		line-height    : 1;
+		text-transform : uppercase;
+		color          : #333333;
+		border-radius  : 100vw;
+		display        : inline-block;
+
+		&--vegetarian {
+			background-color : #51cf66;
+		}
+
+		&--vegan {
+			background-color : #94d82d;
+		}
+
+		&--paleo {
+			background-color : #ffd43b;
+		}
+	}
+
+	&__list {
+		list-style     : none;
+		display        : flex;
+		flex-direction : column;
+		gap            : 1.2rem;
+
+
+	}
+
+	&__list-item {
+		font-size   : 1.8rem;
+		display     : flex;
+		align-items : center;
+		gap         : 1.5em;
+
+		@media (max-width : 59em) {
+			gap : 0.6rem;
+		}
+
+		strong {
+			font-weight : 500;
+		}
+	}
+
+	&__icon {
+		font-size : 1.2em;
+		color     : #e67e22;
+	}
+}
+

@@ -1,0 +1,76 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		cursor          : pointer;
+		padding         : 0.6em 1.4em;
+		font-family     : inherit;
+		font-size       : 1.8rem;
+		font-weight     : 600;
+		text-decoration : none;
+		border          : none;
+		border-radius   : 9px;
+		transition      : background-color 0.2s, box-shadow 0.2s;
+		display         : inline-block;
+
+		@media (max-width : 75em) {
+			font-size : 2rem;
+		}
+	}
+}
+
+.btn-primary {
+	&,
+	&:link,
+	&:visited {
+		color            : #ffffff;
+		background-color : #e67e22;
+	}
+
+	&:hover,
+	&:focus-visible {
+		background-color : #cf711f;
+	}
+}
+
+.btn-form {
+	&,
+	&:link,
+	&:visited {
+		color            : #fdf2e9;
+		background-color : #45260a;
+	}
+
+	&:hover,
+	&:focus-visible {
+		color            : #555555;
+		background-color : #ffffff;
+	}
+}
+
+.btn-secondary {
+	&,
+	&:link,
+	&:visited {
+		color            : #555555;
+		background-color : #ffffff;
+	}
+
+	&:hover,
+	&:focus-visible {
+		background-color : #fdf2e9;
+		box-shadow       : inset 0 0 0 3px #ffffff;
+	}
+}
+
+.btn-hamburger {
+	font-size        : 4rem;
+	background-color : transparent;
+	display          : none;
+
+	@media (max-width : 59em) {
+		z-index : 600;
+		padding : 0;
+		display : block;
+	}
+}

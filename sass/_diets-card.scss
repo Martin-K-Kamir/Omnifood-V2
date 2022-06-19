@@ -1,0 +1,26 @@
+.diets-card {
+
+	@media (max-width : 44em) {
+		grid-column  : 1 / -1;
+		justify-self : center;
+	}
+
+	&__list {
+		list-style     : none;
+		display        : flex;
+		flex-direction : column;
+		gap            : 1.2rem;
+	}
+
+	&__list-item {
+		font-size   : 1.8rem;
+		display     : flex;
+		align-items : center;
+		gap         : 1.2em;
+	}
+
+	&__icon {
+		font-size : 1.2em;
+		color     : #e67e22;
+	}
+}

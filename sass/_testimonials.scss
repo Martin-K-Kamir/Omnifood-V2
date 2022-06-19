@@ -1,0 +1,38 @@
+
+.testimonials-container {
+	display               : grid;
+	align-content         : center;
+	grid-template-columns : repeat(auto-fit, minmax(24rem, 1fr));
+	gap                   : 4rem;
+
+	@media (max-width : 1239px) {
+		margin-top    : 4rem;
+		align-content : start;
+	}
+
+	@media (max-width : 675px) {
+		margin-top : 0;
+	}
+}
+
+.testimonials {
+
+	&__customer-photo {
+		margin-bottom : 1.2rem;
+		width         : 6.4rem;
+		border-radius : 50%;
+		aspect-ratio  : 1 / 1;
+	}
+
+	&__quote {
+		margin-bottom : 1.6rem;
+		font-size     : 1.6rem;
+		line-height   : 1.5;
+		color         : #444444;
+	}
+
+	&__customer-name {
+		font-size : 1.2rem;
+		color     : #6f6f6f;
+	}
+}

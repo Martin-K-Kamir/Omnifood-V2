@@ -1,0 +1,97 @@
+.cta-box {
+	overflow              : hidden;
+	color                 : #45260a;
+	background-color      : #e67e22;
+	background-image      : linear-gradient(to right bottom, #eb984e, #e67e22);
+	box-shadow            : 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+	border-radius         : 11px;
+	display               : grid;
+
+
+	grid-template-columns : 2fr 1fr;
+
+	@media (max-width : 59em) {
+		grid-template-columns : 1fr 1fr;
+	}
+
+	@media (max-width : 44em) {
+		grid-template-columns : 1fr
+	}
+
+	&__image {
+		background-image : linear-gradient(to right bottom, hsla(28, 80%, 61%, 0.35), hsla(28, 80%, 52%, 0.35)), url('../media/eating.jpg');
+		background-size  : cover;
+
+		@media (max-width : 44em) {
+			height     : 60vw;
+			max-height : 30rem;
+			grid-row   : 1 / 2;
+		}
+	}
+
+	&__content {
+		padding : 6.4rem;
+
+		@media (max-width : 59em) {
+			padding : 4.8rem;
+		}
+	}
+
+	&__description {
+		font-size   : 1.8rem;
+		line-height : 1.8;
+	}
+
+	&__header {
+		margin-bottom : 4.8rem;
+	}
+
+	&__form {
+		display               : grid;
+		grid-template-columns : repeat(2, 1fr);
+		gap                   : 2.4rem 4.8rem;
+
+		@media (max-width : 59em) {
+			grid-template-columns : 1fr;
+		}
+	}
+
+	&__label {
+		margin-bottom : 1.2rem;
+		font-size     : 1.6rem;
+		font-weight   : 500;
+		display       : block;
+	}
+
+	&__input,
+	&__option {
+		padding          : 1.2rem;
+		width            : 100%;
+		font-family      : inherit;
+		font-size        : 1.8rem;
+		color            : inherit;
+		background-color : #fdf2e9;
+		box-shadow       : 0 1px 2px rgba(0, 0, 0, 0.1);
+		border           : none;
+		border-radius    : 9px;
+
+		&:focus {
+			outline : 2px solid rgba(69, 38, 10, 0.75);
+		}
+	}
+
+	.btn-form {
+		padding    : 1.3rem;
+		align-self : end;
+
+		@media (max-width : 59em) {
+			margin-top : 1.4rem;
+		}
+	}
+
+	.title-secondary {
+		margin-bottom : 3.2rem;
+		color         : inherit;
+	}
+}
